@@ -23,9 +23,9 @@ Once you clone or download project, go into your folder
 
 ### Endpoints
 
-`localhost:8080/admin/` - is accessible by only admin. 
-`localhost:8080/user/` -  is accessible by only loged in user.
-`localhost:8080/open/` -  is accessible by all.
-`localhost:8080/book/` -  is accessible by all.
+`localhost:8080/admin/` - is accessible by only admin.  
+`localhost:8080/user/` -  is accessible by only loged in user.  
+`localhost:8080/open/` -  is accessible by all.  
+`localhost:8080/book/` -  is accessible by all.  
 
 Note: Please make sure you have mongoDB and nodeJS install.
