@@ -61,7 +61,7 @@ exports.updateUser = async function (req, res) {
 exports.deleteUser = async function (req, res) {
 	try{
 		await User.deleteOne({
-			_id: "5b92157073edb963638ecd20"
+			_id: req.params.userName
 		})
 
 		console.log("delete", deleteUser)
@@ -83,7 +83,6 @@ exports.getUsers = async function (req, res) {
 		console.log(users)
 		res.status(200).json({
 			Error: false,
-			message: "User successfully Deleted.",
 			Data: users
 		})
 	} catch(err) {

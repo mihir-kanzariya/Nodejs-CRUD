@@ -10,7 +10,8 @@ const auth = require('../services/auth.service.js')
 // User Routes.
 router.get('/list', auth.validateToken, usersAction.getUsers); // Get all users
 
-router.post('/new', auth.validateToken, usersAction.createUser); // Insert new user
+// I am not putting endpoint to validate token, so you can check easily.
+router.post('/new', usersAction.createUser); // Insert new user
 
 router.put('/:userName', auth.validateToken, usersAction.updateUser); // Update user by username which is unique
 
