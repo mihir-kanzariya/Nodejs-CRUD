@@ -26,7 +26,7 @@ exports.createUser = async function (req, res) {
 			role: 'user',
 		})
 
-		res.status(201).json({,
+		res.status(201).json({
 			Error: false,
 			message: "Account successfully created."
 		})
