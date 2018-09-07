@@ -47,7 +47,10 @@ exports.validateToken = async (req, res, next) => {
 			return next();
 		});
 	} else {
-		return res.status(400).json(req, res, 'No token provided', 401);
+		return res.status(400).json({
+			Error: true,
+			message: "No token provided."
+		});
 	}
 };
 
