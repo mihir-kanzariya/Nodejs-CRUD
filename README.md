@@ -1,7 +1,7 @@
 # Nodejs-CRUD
 
 ## Getting Started
-You can download this repo or clone using below command. (`<folder-name>` will be project folder in which you want to start your project).
+You can download or clone this repository using the below command. (`<folder-name>` will be the project folder in which you want to start your project).
 ```
 > git clone https://github.com/mihir-kanzariya/Nodejs-CRUD.git <folder-name>
 ```
@@ -9,12 +9,15 @@ You can download this repo or clone using below command. (`<folder-name>` will b
 ### Project Setup
 Once you clone or download project, go into your folder
 
-### Installing
+### Installation
 ```
 > npm install     
 ```
-
-### Run it using below command in the root directory of your application.
+### To start the mongo server, run this command.
+```
+> mongod
+```
+### To run the application use below command in the root directory of your application.
 ```
 > node server.js
 ```
@@ -23,8 +26,8 @@ Once you clone or download project, go into your folder
 
 ### Endpoints
 
-`localhost:8080/admin/` - is accessible by only admin.  
-`localhost:8080/user/` -  is accessible by only loged in user.  
+`localhost:8080/admin/` - is accessible only by admin.  
+`localhost:8080/user/` -  is accessible only by logged in user.  
 `localhost:8080/open/` -  is accessible by all.  
 `localhost:8080/book/` -  is accessible by all.  
 
